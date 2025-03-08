@@ -1,0 +1,288 @@
+/*tags*/
+button {
+    cursor: pointer;
+}
+
+/*fim tags*/
+
+/*Gerais*/
+.Container {
+    display: flex;
+}
+
+
+.BigButton {
+    width: 10%;
+    height: 6vh;
+    border: 1px solid white;
+    border-radius: 100px;
+}
+
+.ButtonMusicBlock{
+    position: fixed;
+    width: auto;
+    padding: 0.5% 1%;
+    z-index: 2;
+    margin-top: -5%;
+    margin-left: 94%;
+    color: rgb(255, 255, 255);
+    font-size: auto;
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 10px;
+}
+.ButtonMusicBlock:hover{
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
+.BigButton:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 100px;
+}
+
+.BackGround {
+    width: 100%;
+    height: 90vh;
+    max-width: 100%;
+    background-position: bottom;
+    max-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2% 8%;
+    text-align: start;
+}
+
+.BlackBackground {
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.227);
+}
+
+
+.TextStylized {
+    color: white;
+}
+
+.Article {
+    width: 50%;
+    font-size: 19px;
+
+}
+
+.Title {
+    -webkit-text-stroke: 2px black;
+    font-size: 100px;
+}
+
+.BlackBackground.Container.WrapFlex {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    justify-content: start;
+    width: 100%;
+    height:auto;
+    position:absolute;
+    z-index:0;
+    background-color:rgb(21, 28, 48)
+
+}
+
+.BlackBackgroundTest.ContainerTest.WrapFlexTest {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    justify-content: start;
+    width: 100%;
+    height:auto;
+    position:absolute;
+    z-index:0;
+    background-color:rgb(21, 28, 48)
+
+}
+
+.NoImgBackground {
+    background-color: rgb(21, 28, 48);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+
+
+.ItemBlock {
+    width: 18%;
+    height: 50vh;
+    margin: 1%;
+    margin-left: 6%;
+    padding: 1px;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.ItemBlock:hover {
+    background-color: rgb(21, 146, 255);
+}
+
+.ImagemBlock {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.MusicBlock{
+    /* width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    margin-top: -50%;
+    opacity: 50%;  */
+    
+    width: 94%;
+    margin-left: 5.5%;
+    height: 9.5vh;
+    position: fixed;
+    z-index: 1;
+    margin-top: -2%;
+    transition:ease-in-out 0.5s;
+    border-radius: 10px 10px 0px 0px;
+    opacity: 20%;
+}
+
+.MusicBlock:hover{
+    opacity: 100%;
+    margin-top: -4.5%;
+}
+
+/*Fim Gerais*/
+
+/*Teste*/
+
+
+/*fim Teste*/
+
+/*Imagem MainList*/
+.MainListImg {
+    width: 300px;
+    height: 50vh;
+    background-color: aliceblue;
+    margin-bottom: 20%;
+}
+
+.MainListImg h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 1%;
+    color: white;
+}
+
+.image {
+    height: 49.9vh;
+    width: 99.8%;
+    padding-left: 0.5px;
+    padding-top: 0.5px;
+    object-fit: cover;
+    cursor: pointer
+}
+
+/*Fim Imagem MainList*/
+
+
+/*Header Principal*/
+.HeaderMain {
+    width: 100%;
+    height: 10vh;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    background-color: rgb(200, 50, 50);
+    border: 1px solid black
+}
+
+/*Header principal*/
+
+/*Menu Lateral*/
+.LeftMenu {
+    background-color: rgb(200, 50, 50);
+    position: fixed;
+    z-index: 2;
+    width: 5%;
+    justify-items: end;
+    padding-top: 1%;
+    transition: ease-in-out 0.3s;
+}
+
+.LeftMenu:hover {
+    margin-left: 0;
+    width: 20%;
+    justify-items: start;
+}
+
+@media screen and (max-width:768px) {
+    .LeftMenu:hover {
+        margin-left: 0;
+        width: 100%;
+        justify-items: start;
+    }
+}
+
+.LeftMenu ul {
+    width: 100%;
+    height: 90vh;
+    font-size: 25px;
+    color: white;
+}
+
+.LeftMenu ul li {
+    height: 10%;
+    align-content: center;
+    padding-left: 2%;
+}
+
+.LeftMenu ul li:hover {
+    background-color: rgba(0, 0, 0, 0.214);
+    cursor: pointer;
+}
+
+
+/*Fim Menu Lateral*/
+
+
+/*Inicio IDS*/
+#MainShow {
+    width: 100%;
+}
+
+
+
+#MainShow hr {
+    width: 70%;
+    justify-self: center;
+    margin-bottom: 2%;
+}
+
+#MainShowButtons {
+    width: 55%;
+    margin-left: 45%;
+
+}
+
+#MainShow h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+
+#MainShow ul {
+    display: flex;
+    justify-self: center;
+    gap: 10px;
+}
+
+/*Fim IDS*/

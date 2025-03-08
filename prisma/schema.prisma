@@ -1,0 +1,28 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model factions{
+    id String @id @default(cuid())
+    nome String
+    descricao String
+    imagem String
+    Participantes characters[]
+  }
+  
+  model characters{
+    id String @id @default(cuid())
+    factionId String
+    nome String
+    descricao String
+    imagem String
+    factions factions @relation(fields: [factionId],references: [id])
+  }
